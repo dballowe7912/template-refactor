@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redeux';
-import { Provider } from 'react-redux';
-import rootReducer from './redux/root-reducer';
+// import { createStore } from 'redux';
+// import { Provider } from 'react-redux';
+// import rootReducer from './redux/root-reducer';
 
 import App from './App';
 
@@ -10,14 +10,12 @@ import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 
-const store = createStore(
-  rootReducer
-);
+// const store = createStore(
+//   rootReducer
+// );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+    <App />,
   document.getElementById('root')
 );
 
